@@ -46,11 +46,10 @@
   <script>
     async function fetchData() {
       try {
-        // 改為您的 Google Apps Script URL
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyHLyoK8lMxQGVu1q3Le_sbAJDMRHcxRWcsadGey8-FKkuRA_V1jdnQpFS6IJ5b5wMg/exec');
+        const response = await fetch('https://script.google.com/macros/s/AKfycbzR2I523Hkb8T7VmQSJOzemIn-vPfimu7kyrMRW7UVjRLgmQuhJaLivHQi74oFWNTU/exec');
         const data = await response.json();
         const percentage = data.percentage;
-        
+
         document.getElementById('progress-circle').style.background = `conic-gradient(
           #4caf50 ${percentage * 3.6}deg,
           #e0e0e0 ${percentage * 3.6}deg
